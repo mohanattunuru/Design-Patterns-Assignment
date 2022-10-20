@@ -18,5 +18,11 @@ public class Login extends JFrame{
     private int userType;
     private Person person;
     private Facade facade;
-    
+
+    JLabel label = new JLabel("User name :");
+        label.setBounds(20,20,100,25);
+        this.add(label);
+        JTextField username = new JTextField();
+        username.setBounds(100,20,150,25);
+        add(username);
 }
