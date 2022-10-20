@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -19,10 +18,34 @@ public class Login extends JFrame{
     private Person person;
     private Facade facade;
 
-    JLabel label = new JLabel("User name :");
-        label.setBounds(20,20,100,25);
-        this.add(label);
+    public Login(Facade facade) {
+        this.facade = facade;
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        counter = 0;
+
+        getBuyers();
+        getsellers();
+
+        JPanel contentPane = new JPanel();
+        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
+        contentPane.setBorder(new EmptyBorder(10, 10, 10, 10));
+
+        JPanel p2 = new JPanel(new FlowLayout());
         JTextField username = new JTextField();
-        username.setBounds(100,20,150,25);
-        add(username);
+        username.setPreferredSize(new Dimension(150, 30));
+        JLabel label = new JLabel("User name   ");
+        p2.add(label);
+        p2.add(username);
+        contentPane.add(p2);
+
+        JPanel p3 = new JPanel(new FlowLayout());
+        JPasswordField password = new JPasswordField();
+        password.setPreferredSize(new Dimension(150, 30));
+        JLabel label1 = new JLabel("Password    ");
+        p3.add(label1);
+        p3.add(password);
+        contentPane.add(p3);
+    }
+
 }
