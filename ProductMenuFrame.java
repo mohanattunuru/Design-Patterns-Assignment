@@ -22,12 +22,12 @@ public class ProductMenuFrame extends JFrame {
         p2.add(view);
 
         JPanel p3 = new JPanel(new FlowLayout());
-        JButton markOffering = new JButton("Mark Offering");
-        p3.add(markOffering);
+        JButton discussBidding = new JButton("Discuss Bidding");
+        p3.add(discussBidding);
 
         JPanel p4 = new JPanel(new FlowLayout());
-        JButton submitOffering = new JButton("Submit Offering");
-        p4.add(submitOffering);
+        JButton submitBidding = new JButton("Submit Bidding");
+        p4.add(submitBidding);
 
         JPanel p5 = new JPanel(new FlowLayout());
         JButton remind = new JButton("Remind");
@@ -64,8 +64,8 @@ public class ProductMenuFrame extends JFrame {
 
         trading.addActionListener(e->facade.addTrading());
         view.addActionListener(e->facade.viewTrading());
-        markOffering.addActionListener(e->facade.markOffering());
-        submitOffering.addActionListener(e->facade.submitOffering());
+        discussBidding.addActionListener(e->facade.discussBidding());
+        submitBidding.addActionListener(e->facade.submitBidding());
         product_list.addActionListener(e->facade.createProductList());
         remind.addActionListener(e->facade.remind());
         attach.addActionListener(e->facade.attachProductToUser());

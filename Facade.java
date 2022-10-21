@@ -36,16 +36,16 @@ public class Facade {
         JOptionPane.showMessageDialog(null, "No trading");
     }
 
-    public void viewOffering(){
-        JOptionPane.showMessageDialog(null, "No offers to view");
+    public void decideBidding(){
+        JOptionPane.showMessageDialog(null, "No bids to decide");
     }
 
-    public void markOffering(){
-        JOptionPane.showMessageDialog(null, "No offers to mark");
+    public void discussBidding(){
+        JOptionPane.showMessageDialog(null, "No bids to discuss");
     }
 
-    public void submitOffering(){
-        JOptionPane.showMessageDialog(null, "No offers to submit");
+    public void submitBidding(){
+        JOptionPane.showMessageDialog(null, "No bids to submit");
     }
 
     public void remind(){
